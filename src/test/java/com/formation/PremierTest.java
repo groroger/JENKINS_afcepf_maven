@@ -21,13 +21,20 @@ public class PremierTest {
 	@DisplayName("test du add")
 	void addTest()
 	{
-		assertEquals(42, calcul.add(36, 6), "add ok!");
+		assertEquals(42, calcul.add(36, 6), "add not ok!");
+	}
+	
+	@Test
+	@DisplayName("test du div")
+	void multiplyTest()
+	{
+		assertEquals(42, calcul.multiply(6, 7), "multiply not ok!");
 	}
 	
 	@Test
 	@DisplayName("test du multiply")
-	void multiplyTest()
+	void divTest()
 	{
-		assertEquals(42, calcul.multiply(6, 7), "multiply ok!");
+		assertEquals(42, calcul.div(630, 15), "div not ok!");
 	}
 }
